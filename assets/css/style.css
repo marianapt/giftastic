@@ -1,6 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Zilla+Slab+Highlight');
+
+
 body {
-    font: 18px arial, sans-serif;
-    background: #eee;
+    font-family: 'ABeeZee';
+    background-image: url("/Users/marianaperez/Documents/giftastic/assets/img/cats.jpg");
+    background-repeat: no-repeat;
+    font-size: 19px;
+    background-attachment: static;
+    background-size: 700px 1000px;
+    background-position: top left;
+    background-color: #EA5E77;
+
   }
   
   #animals {
@@ -35,10 +46,12 @@ body {
   input[type="submit"] {
     padding: 5px 20px;
     margin: 0 10px 10px 0;
-    font-size: 18px;
-    color: #fff;
+    font-weight: bold;
+    font-family: 'Zilla Slab Highlight';
+    font-size: 20px;
+    color: grey;
     cursor: pointer;
-    background: #659a98;
+    background: pink;
     border: 0;
     border-radius: 5px;
     box-shadow: 2px 2px 3px #bbb;
@@ -46,10 +59,10 @@ body {
   
   button:hover,
   input[type="submit"]:hover {
-    background: #334e4d;
+    background: #A89397;
   }
   
   button.active {
-    background: #334e4d;
+    background: #D343B6;
   }
   

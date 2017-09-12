@@ -20,12 +20,12 @@ $(document).ready(function() {
         }
     
       }
-    
+    //on click adding and removing a class
       $(document).on("click", ".animal-button", function() {
         $("#animals").empty();
         $(".animal-button").removeClass("active");
         $(this).addClass("active");
-    
+    //setting query
         var type = $(this).attr("data-type");
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC&limit=10";
     
@@ -45,14 +45,14 @@ $(document).ready(function() {
     
             var animated = results[i].images.fixed_height.url;
             var still = results[i].images.fixed_height_still.url;
-    
+    //these datas
             var animalImage = $("<img>");
             animalImage.attr("src", still);
             animalImage.attr("data-still", still);
             animalImage.attr("data-animate", animated);
             animalImage.attr("data-state", "still");
             animalImage.addClass("animal-image");
-    
+    //change html
             animalDiv.append(p);
             animalDiv.append(animalImage);
     
